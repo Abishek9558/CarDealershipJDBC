@@ -1,12 +1,13 @@
 package com.pluralsight;
 
 public class LeaseContract extends Contract{
+
     private double price;
     private double expectedEndingValue;
     private double leaseFee;
 
-    public LeaseContract(String date, String customerName, String customerEmail, Vehicle vehicleSold) {
-        super(date, customerName, customerEmail, vehicleSold);
+    public LeaseContract(int vin, String date, String customerName, String customerEmail, Vehicle vehicleSold) {
+        super(vin,date, customerName, customerEmail, vehicleSold);
 
         this.price = vehicleSold.getPrice();
         this.expectedEndingValue = price * 0.5;

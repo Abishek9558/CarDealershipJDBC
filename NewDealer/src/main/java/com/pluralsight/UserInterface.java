@@ -208,9 +208,9 @@ public class UserInterface {
         if ("SALE".equals(type)) {
             System.out.print("Is it financed? (yes/no): ");
             boolean finance = scanner.nextLine().equalsIgnoreCase("yes");
-            contract = new SalesContract(date, name, email, vehicle);
+            contract = new SalesContract(vin,date, name, email, vehicle);
         } else {
-            contract = new LeaseContract(date, name, email, vehicle);
+            contract = new LeaseContract(vin,date, name, email, vehicle);
         }
 
         new ContractFileManager().saveContract(contract);

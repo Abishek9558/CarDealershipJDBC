@@ -14,9 +14,9 @@ public class DataSourceManager {
         dataSource.setUrl("jdbc:mysql://localhost:3306/cardealershipdatabase");
         dataSource.setUsername("root");
         dataSource.setPassword("yearup");
-        dataSource.setMinIdle(5);
-        dataSource.setMaxIdle(10);
-        dataSource.setMaxOpenPreparedStatements(100);
+        //dataSource.setMinIdle(5);
+        //dataSource.setMaxIdle(10);
+        //dataSource.setMaxOpenPreparedStatements(100);
     }
 
     public DataSource getDataSource() {
